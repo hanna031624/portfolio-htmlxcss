@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Serif', 'Georgia', sans-serif;
+}
+
+body {
+    background-color: #e0f7f4;
+    color: #333;
+}
+
+header {
+    background-color: #c4f2ed;
+    padding: 10px 50px;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: fit-content;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.logo-text {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+section {
+    padding: 60px 10%;
+}
+
+h2 {
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+
+.work-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.work-card img {
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+}
+
+.reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.service-item {
+    background-color: #b2d8d3;
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 12px 25px;
+    font-weight: bold;
+    font-style: italic;
+    width: fit-content;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+}
+
+.service-item:nth-child(1) { margin-left: 100px; }
+.service-item:nth-child(2) { margin-left: 150px; }
+.service-item:nth-child(3) { margin-left: 200px; }
+.service-item:nth-child(4) { margin-left: 250px; }
+.service-item:nth-child(5) { margin-left: 300px; }
+
+.dashed {
+    border: 2px dashed #000;
+}
+
+.motto-container {
+    margin-top: 50px;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.motto-box {
+    background-color: #b2d8d3;
+    border: 3px solid #000;
+    padding: 25px;
+    font-weight: bold;
+    text-align: center;
+    width: 400px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.motto-box.top {
+    position: relative;
+    z-index: 1;
+}
+
+.motto-box.bottom {
+    position: relative;
+    z-index: 2;
+    margin-top: -20px;
+    margin-left: 150px;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.1);
+}
+
+.project-header {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.project-tagline {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project-card img:hover {
+    transform: scale(1.05);
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text-box {
+    background: #b2d8d3;
+    padding: 40px;
+    width: 50%;
+    box-shadow: 10px 10px 0px #88aba6;
+}
+
+.profile-pic {
+    width: 250px;
+    border-radius: 15px;
+    border: 3px solid #000;
+}
+
+.contact-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 30px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
